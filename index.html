@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CosmoPulse - Explore the Universe</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -35,6 +34,8 @@
                     <li class="nav-item"><a class="nav-link" href="#explore"><i class="fas fa-globe me-1"></i> Planet
                             Explorer</a></li>
                 </ul>
+                <li class="nav-item"><a class="nav-link" href="#blackholes"><i class="fas fa-circle-notch me-1"></i> Black Holes</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope me-1"></i> Contact</a></li> 
             </div>
         </div>
     </nav>
@@ -346,9 +347,278 @@
             </div>
         </div>
     </section>
+<div class="container my-5 py-5" id="blackholes">
+  <div class="row g-4 justify-content-center">
+    
+    <!-- CARD 1: MERCURY -->
+    <div class="col-12 col-md-6 col-lg-4 astro-card-wrapper">
+      <div class="astro-card" data-tilt data-tilt-max="12" data-tilt-speed="800" data-tilt-glare="true" data-tilt-max-glare="0.25">
+        <div class="card-inner">
+          <div class="card-header-meta"><span class="category-badge">INNER</span><span class="index-badge">01</span></div>
+          <div class="icon-sphere"><div class="pulse-ring"></div><i class="fa-solid fa-meteor text-cyan"></i></div>
+          <h3 class="card-title">MERCURY</h3>
+          <p class="card-description">The smallest planet in our solar system and nearest to the Sun, experiencing extreme temperature swings.</p>
+          <div class="ios-stats-grid">
+            <div class="stat-box"><i class="fa-solid fa-moon text-cyan"></i><div><span class="stat-val">0</span><span class="stat-lbl">Moons</span></div></div>
+            <div class="stat-box"><i class="fa-solid fa-temperature-high text-cyan"></i><div><span class="stat-val">167°C</span><span class="stat-lbl">Avg Temp</span></div></div>
+          </div>
+          <button class="action-btn"><span>Explore Dimension</span><div class="btn-arrow"><i class="fa-solid fa-chevron-right"></i></div></button>
+        </div>
+      </div>
+    </div>
 
+    <!-- CARD 2: VENUS -->
+    <div class="col-12 col-md-6 col-lg-4 astro-card-wrapper">
+      <div class="astro-card" data-tilt data-tilt-max="12" data-tilt-speed="800" data-tilt-glare="true" data-tilt-max-glare="0.25">
+        <div class="card-inner">
+          <div class="card-header-meta"><span class="category-badge">INNER</span><span class="index-badge">02</span></div>
+          <div class="icon-sphere"><div class="pulse-ring"></div><i class="fa-solid fa-fire text-cyan"></i></div>
+          <h3 class="card-title">VENUS</h3>
+          <p class="card-description">Spinning slowly in the opposite direction, Venus is the hottest planet with a dense, toxic atmosphere.</p>
+          <div class="ios-stats-grid">
+            <div class="stat-box"><i class="fa-solid fa-moon text-cyan"></i><div><span class="stat-val">0</span><span class="stat-lbl">Moons</span></div></div>
+            <div class="stat-box"><i class="fa-solid fa-temperature-high text-cyan"></i><div><span class="stat-val">464°C</span><span class="stat-lbl">Avg Temp</span></div></div>
+          </div>
+          <button class="action-btn"><span>Explore Dimension</span><div class="btn-arrow"><i class="fa-solid fa-chevron-right"></i></div></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3: EARTH -->
+    <div class="col-12 col-md-6 col-lg-4 astro-card-wrapper">
+      <div class="astro-card" data-tilt data-tilt-max="12" data-tilt-speed="800" data-tilt-glare="true" data-tilt-max-glare="0.25">
+        <div class="card-inner">
+          <div class="card-header-meta"><span class="category-badge">HABITABLE</span><span class="index-badge">03</span></div>
+          <div class="icon-sphere"><div class="pulse-ring"></div><i class="fa-solid fa-earth-americas text-cyan"></i></div>
+          <h3 class="card-title">EARTH</h3>
+          <p class="card-description">Our home planet, the only oasis in the vast cosmos known to harbor liquid surface water and life.</p>
+          <div class="ios-stats-grid">
+            <div class="stat-box"><i class="fa-solid fa-moon text-cyan"></i><div><span class="stat-val">1</span><span class="stat-lbl">Moon</span></div></div>
+            <div class="stat-box"><i class="fa-solid fa-temperature-half text-cyan"></i><div><span class="stat-val">15°C</span><span class="stat-lbl">Avg Temp</span></div></div>
+          </div>
+          <button class="action-btn"><span>Explore Dimension</span><div class="btn-arrow"><i class="fa-solid fa-chevron-right"></i></div></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 4: MARS -->
+    <div class="col-12 col-md-6 col-lg-4 astro-card-wrapper">
+        <div class="astro-card" data-tilt data-tilt-max="12" data-tilt-speed="800" data-tilt-glare="true" data-tilt-max-glare="0.25">
+        <div class="card-inner">
+          <div class="card-header-meta"><span class="category-badge">DESERT</span><span class="index-badge">04</span></div>
+          <div class="icon-sphere"><div class="pulse-ring"></div><i class="fa-solid fa-circle text-cyan"></i></div>
+          <h3 class="card-title">MARS</h3>
+          <p class="card-description">A dusty, cold desert world with a very thin atmosphere, holding ancient signs of dynamic water flows.</p>
+          <div class="ios-stats-grid">
+            <div class="stat-box"><i class="fa-solid fa-moon text-cyan"></i><div><span class="stat-val">2</span><span class="stat-lbl">Moons</span></div></div>
+            <div class="stat-box"><i class="fa-solid fa-temperature-low text-cyan"></i><div><span class="stat-val">-65°C</span><span class="stat-lbl">Avg Temp</span></div></div>
+          </div>
+          <button class="action-btn"><span>Explore Dimension</span><div class="btn-arrow"><i class="fa-solid fa-chevron-right"></i></div></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 5: JUPITER -->
+    <div class="col-12 col-md-6 col-lg-4 astro-card-wrapper">
+      <div class="astro-card" data-tilt data-tilt-max="12" data-tilt-speed="800" data-tilt-glare="true" data-tilt-max-glare="0.25">
+        <div class="card-inner">
+          <div class="card-header-meta"><span class="category-badge">GIANT</span><span class="index-badge">05</span></div>
+          <div class="icon-sphere"><div class="pulse-ring"></div><i class="fa-solid fa-cloud text-cyan"></i></div>
+          <h3 class="card-title">JUPITER</h3>
+          <p class="card-description">The king of planets, a massive gas giant twice as large as all other solar planets combined.</p>
+          <div class="ios-stats-grid">
+            <div class="stat-box"><i class="fa-solid fa-moon text-cyan"></i><div><span class="stat-val">95</span><span class="stat-lbl">Moons</span></div></div>
+            <div class="stat-box"><i class="fa-solid fa-temperature-low text-cyan"></i><div><span class="stat-val">-110°C</span><span class="stat-lbl">Avg Temp</span></div></div>
+          </div>
+          <button class="action-btn"><span>Explore Dimension</span><div class="btn-arrow"><i class="fa-solid fa-chevron-right"></i></div></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 6: SATURN -->
+    <div class="col-12 col-md-6 col-lg-4 astro-card-wrapper">
+      <div class="astro-card" data-tilt data-tilt-max="12" data-tilt-speed="800" data-tilt-glare="true" data-tilt-max-glare="0.25">
+        <div class="card-inner">
+          <div class="card-header-meta"><span class="category-badge">ORBITANT</span><span class="index-badge">06</span></div>
+          <div class="icon-sphere"><div class="pulse-ring"></div><i class="fa-solid fa-ring text-cyan"></i></div>
+          <h3 class="card-title">SATURN</h3>
+          <p class="card-description">The jewel of our solar system, adorned with magnificent cosmic rings that span thousands of miles.</p>
+          <div class="ios-stats-grid">
+            <div class="stat-box"><i class="fa-solid fa-moon text-cyan"></i><div><span class="stat-val">146</span><span class="stat-lbl">Moons</span></div></div>
+            <div class="stat-box"><i class="fa-solid fa-temperature-low text-cyan"></i><div><span class="stat-val">-138°C</span><span class="stat-lbl">Avg Temp</span></div></div>
+          </div>
+          <button class="action-btn"><span>Explore Dimension</span><div class="btn-arrow"><i class="fa-solid fa-chevron-right"></i></div></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--Contact with us section-->  
+<section class="contact-section py-5" id="contact">
+    <div class="container">
+
+        <div class="text-center mb-5" data-aos="fade-down" data-aos-duration="1000">
+            <h2 class="fw-bold text-white">Get in Touch</h2>
+            <p class="text-muted">Share your thoughts, suggestions, and questions with the CosmoPulse team.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-lg-4" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+                <div class="contact-info-card h-100 p-4 d-flex flex-column justify-content">
+                    <div>
+                        <h4 class="text-white mb-4">Contact Information</h4>
+                        <br>
+                        <br>
+                        <div class="d-flex align-items-center mb-3 text-light">
+                            <div class="icon-box me-3"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <span class="d-block text-muted small">Address</span>
+                                <span>Herat, Afghanistan</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-3 text-light">
+                            <div class="icon-box me-3"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <span class="d-block text-muted small">Phone</span>
+                                <span>+93 795403190</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-3 text-light">
+                            <div class="icon-box me-3"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="d-block text-muted small">Email</span>
+                                <span>cosmopulse@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links d-flex justify-content-center gap-2 mt-4">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400">
+                <div class="contact-form-card p-4">
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="nameInput" class="form-label text-light">Full Name</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                    <input type="text" class="form-all-input form-control" id="nameInput" required>
+                                    <div class="invalid-feedback">Please enter your name.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="emailInput" class="form-label text-light">Email Address</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                    <input type="email" class="form-all-input form-control" id="emailInput" required>
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="subjectInput" class="form-label text-light">Subject</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-heading"></i></span>
+                                    <input type="text" class="form-all-input form-control" id="subjectInput" required>
+                                    <div class="invalid-feedback">Please specify the subject.</div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="messageInput" class="form-label text-light">Message</label>
+                                <textarea class="form-all-input form-control" id="messageInput" rows="5" required></textarea>
+                                <div class="invalid-feedback">Please write your message.</div>
+                            </div>
+                            <div class="col-12 text-end">
+                                <button type="submit" class="btn btn-submit px-4 py-2">
+                                    Send Message <i class="fas fa-paper-plane ms-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="successMessage" class="alert alert-success mt-3 d-none" role="alert">
+                        <i class="fas fa-check-circle me-2"></i> Your message has been sent successfully!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="bg-cosmic text-light py-5 position-relative overflow-hidden" dir="ltr">
+  <div class="cosmic-glow"></div>
+
+  <div class="container position-relative z-1">
+    <div class="row gy-4">
+      
+      <div class="col-lg-4 col-md-6">
+        <h5 class="text-uppercase fw-bold text-gradient mb-3">COSMOPULSE</h5>
+        <p class="text-muted small">Exploring the unknowns of the cosmos and the endless pulse of stars. Join us on this epic interstellar journey.</p>
+        <div class="d-flex gap-3 mt-3">
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6">
+        <h6 class="text-uppercase fw-bold mb-3 text-cyan">Quick Links</h6>
+        <ul class="list-unstyled footer-links">
+          <li><a href="#" class="nav-link-custom"><i class="fas fa-chevron-right me-2 small-icon"></i>Home</a></li>
+          <li><a href="#" class="nav-link-custom"><i class="fas fa-chevron-right me-2 small-icon"></i>Cosmic Stats</a></li>
+          <li><a href="#" class="nav-link-custom"><i class="fas fa-chevron-right me-2 small-icon"></i>Planet Explorer</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-6">
+        <h6 class="text-uppercase fw-bold mb-3 text-cyan">Resources</h6>
+        <ul class="list-unstyled footer-links">
+          <li><a href="#" class="nav-link-custom"><i class="fas fa-chevron-right me-2 small-icon"></i>Privacy Policy</a></li>
+          <li><a href="#" class="nav-link-custom"><i class="fas fa-chevron-right me-2 small-icon"></i>Terms of Service</a></li>
+          <li><a href="#" class="nav-link-custom"><i class="fas fa-chevron-right me-2 small-icon"></i>Support</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <h6 class="text-uppercase fw-bold mb-3 text-cyan">Cosmic Newsletter</h6>
+        <p class="text-muted small">Subscribe to receive the latest astronomical discoveries and updates.</p>
+        <form id="newsletterForm" class="input-group mb-3">
+          <input type="email" id="newsletterEmail" class="form-control bg-dark-custom text-light border-secondary" placeholder="Your email address..." required>
+          <button class="btn bg-cyan text-white" type="submit">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <hr class="border-secondary my-4">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start">
+        <p class="text-muted small mb-0">&copy; 2026 CosmoPulse. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+        <button id="scrollToTop" class="btn btn-outline-cyan btn-sm rounded-circle">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="app.js"></script>
+
 </body>
 
 </html>

@@ -244,3 +244,63 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observer.observe(statsSection);
 });
+
+AOS.init({
+    once: true, 
+    easing: 'ease-out-quad'
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    'use strict';
+
+    const form = document.getElementById('contactForm');
+    const successMessage = document.getElementById('successMessage');
+
+    form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+        } else {
+            event.preventDefault(); 
+            successMessage.classList.remove('d-none');
+            form.reset();
+            form.classList.remove('was-validated');
+            
+            setTimeout(() => {
+                successMessage.classList.add('d-none');
+            }, 5000);
+            return;
+        }
+        form.classList.add('was-validated');
+    }, false);
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollToTopBtn = document.getElementById("scrollToTop");
+  if (scrollToTopBtn) {
+    scrollToTopBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  }
+
+  const newsletterForm = document.getElementById("newsletterForm");
+  if (newsletterForm) {
+    newsletterForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const emailInput = document.getElementById("newsletterEmail").value;
+      
+      alert(`Email ${emailInput} successfuly registered`);
+      newsletterForm.reset();
+    });
+  }
+});
+  VanillaTilt.init(document.querySelectorAll(".astro-card"), {
+    max: 12,            
+    speed: 800,     
+    glare: true,        
+    "max-glare": 0.25, 
+    gyroscope: true,    
+    perspective: 1200   
+  });

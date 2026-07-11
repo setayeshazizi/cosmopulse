@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CosmoPulse - Explore the Universe</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/photo_2026-07-11_22-18-11.jpg">
 </head>
 
 <body>
-    <!-- Animated Stars -->
+
     <div class="stars-container" id="starsContainer"></div>
     <div class="cosmic-dust"></div>
-
-    <!-- Premium Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#home">
@@ -33,14 +34,15 @@
                             Stats</a></li>
                     <li class="nav-item"><a class="nav-link" href="#explore"><i class="fas fa-globe me-1"></i> Planet
                             Explorer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blackholes"><i class="fas fa-circle-notch me-1"></i>
+                            Black Holes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope me-1"></i>
+                            Contact</a></li>
                 </ul>
-                <li class="nav-item"><a class="nav-link" href="#blackholes"><i class="fas fa-circle-notch me-1"></i> Black Holes</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope me-1"></i> Contact</a></li> 
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero-section">
         <div class="hero-glow"></div>
         <div class="container">
@@ -75,34 +77,27 @@
         </div>
     </section>
 
-    <!-- Stats Section -->
     <section id="stats" class="py-5">
         <div class="container py-5">
             <h2 class="section-title">UNIVERSE IN NUMBERS</h2>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
+                        <div class="stat-icon"><i class="fas fa-clock"></i></div>
                         <div class="stat-number" data-target="138">0</div>
                         <div class="stat-label">Age of Universe<br>(Billion Years)</div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-globe-americas"></i>
-                        </div>
+                        <div class="stat-icon"><i class="fas fa-globe-americas"></i></div>
                         <div class="stat-number" data-target="2000">0</div>
                         <div class="stat-label">Discovered<br>Exoplanets</div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="stat-card">
-                        <div class="stat-icon">
-                            <i class="fas fa-bolt"></i>
-                        </div>
+                        <div class="stat-icon"><i class="fas fa-bolt"></i></div>
                         <div class="stat-number" data-target="299792">0</div>
                         <div class="stat-label">Speed of Light<br>(km/s)</div>
                     </div>
@@ -111,7 +106,6 @@
         </div>
     </section>
 
-    <!-- Planet Explorer Section -->
     <section id="explore" class="py-5 explore-section">
         <div class="container py-5">
             <h2 class="section-title">PLANETARY ENCYCLOPEDIA</h2>
@@ -119,8 +113,6 @@
 
             <div class="slider-container" id="planetSlider">
                 <div class="slider-track" id="sliderTrack">
-
-                    <!-- Planet Card: Mars -->
                     <div class="slider-card" data-position="center" data-planet="mars">
                         <div class="planet-card-inner">
                             <div class="planet-visual-side">
@@ -161,7 +153,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Planet Card: Jupiter -->
                     <div class="slider-card" data-position="right" data-planet="jupiter">
                         <div class="planet-card-inner">
                             <div class="planet-visual-side">
@@ -201,8 +192,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Planet Card: Saturn -->
                     <div class="slider-card" data-position="far-right" data-planet="saturn">
                         <div class="planet-card-inner">
                             <div class="planet-visual-side">
@@ -242,8 +231,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Planet Card: Venus -->
                     <div class="slider-card" data-position="far-left" data-planet="venus">
                         <div class="planet-card-inner">
                             <div class="planet-visual-side">
@@ -283,8 +270,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Planet Card: Neptune -->
                     <div class="slider-card" data-position="left" data-planet="neptune">
                         <div class="planet-card-inner">
                             <div class="planet-visual-side">
@@ -325,18 +310,13 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
 
-                <!-- Navigation Buttons -->
-                <button class="slider-nav prev" onclick="navigateSlider('prev')">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="slider-nav next" onclick="navigateSlider('next')">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
+                <button class="slider-nav prev" onclick="navigateSlider('prev')"><i
+                        class="fas fa-chevron-left"></i></button>
+                <button class="slider-nav next" onclick="navigateSlider('next')"><i
+                        class="fas fa-chevron-right"></i></button>
 
-                <!-- Auto-play indicator -->
                 <div class="autoplay-indicator">
                     <span>AUTO</span>
                     <div class="autoplay-progress">
@@ -347,278 +327,406 @@
             </div>
         </div>
     </section>
-<div class="container my-5 py-5" id="blackholes">
-  <div class="row g-4 justify-content-center">
-    
-    <!-- CARD 1 -->
-    <div class="col-12 col-md-6 col-lg-4 astro-card-wrapper">
-      <div class="astro-card" data-tilt data-tilt-max="12" data-tilt-speed="800" data-tilt-glare="true" data-tilt-max-glare="0.25">
-        <div class="card-inner">
-          <div class="card-header-meta"><span class="category-badge">INNER</span><span class="index-badge">01</span></div>
-          <div class="icon-sphere"><div class="pulse-ring"></div><i class="fa-solid fa-meteor text-cyan"></i></div>
-          <h3 class="card-title">BLACK HOLE</h3>
-          <p class="card-description">A region of spacetime where gravity is so strong that nothing, not even light, can escape.</p>
-          <div class="ios-stats-grid">
-            <div class="stat-box"><i class="fa-solid fa-scale-balanced text-cyan"></i><div><span class="stat-val"></span><span class="stat-lbl">Stellar Mass</span></div></div>
-            <div class="stat-box"><i class="fa-solid fa-circle-notch text-cyan"></i><div><span class="stat-val"></span><span class="stat-lbl">Stell. BH </span></div></div>
-          </div>
-          <button class="action-btn"><span>Explore Dimension</span><div class="btn-arrow"><i class="fa-solid fa-chevron-right"></i></div></button>
-        </div>
-      </div>
-    </div>
 
-    <!-- CARD 2 -->
-    <div class="col-12 col-md-6 col-lg-4 astro-card-wrapper">
-      <div class="astro-card" data-tilt data-tilt-max="12" data-tilt-speed="800" data-tilt-glare="true" data-tilt-max-glare="0.25">
-        <div class="card-inner">
-          <div class="card-header-meta"><span class="category-badge">INNER</span><span class="index-badge">02</span></div>
-          <div class="icon-sphere"><div class="pulse-ring"></div><i class="fa-solid fa-fire text-cyan"></i></div>
-          <h3 class="card-title">SINGULARITY</h3>
-          <p class="card-description">The central point of infinite density and zero volume where spacetime curvature becomes infinite.</p>
-          <div class="ios-stats-grid">
-            <div class="stat-box"><i class="fa-solid fa-wand-magic-sparkles text-cyan"></i><div><span class="stat-val"></span><span class="stat-lbl">Infinite</span></div></div>
-            <div class="stat-box"><i class="fa-solid fa-bezier-curve text-cyan"></i><div><span class="stat-val"></span><span class="stat-lbl">Curvature max</span></div></div>
-          </div>
-          <button class="action-btn"><span>Explore Dimension</span><div class="btn-arrow"><i class="fa-solid fa-chevron-right"></i></div></button>
-        </div>
-      </div>
-    </div>
+    <section id="blackholes" class="py-5"
+        style="position: relative; z-index: 2; background: rgba(255,255,255,0.01); border-bottom: 1px solid var(--glass-border);">
+        <div class="container py-2">
+            <h2 class="section-title">COSMIC PHENOMENA</h2>
+            <p class="text-center" style="color: var(--text-secondary); margin-bottom: 50px;">Dive into the darkest and
+                most mysterious corners of the universe</p>
 
-    <!-- CARD 3-->
-    <div class="col-12 col-md-6 col-lg-4 astro-card-wrapper">
-      <div class="astro-card" data-tilt data-tilt-max="12" data-tilt-speed="800" data-tilt-glare="true" data-tilt-max-glare="0.25">
-        <div class="card-inner">
-          <div class="card-header-meta"><span class="category-badge">HABITABLE</span><span class="index-badge">03</span></div>
-          <div class="icon-sphere"><div class="pulse-ring"></div><i class="fa-solid fa-earth-americas text-cyan"></i></div>
-          <h3 class="card-title">EVENT HORIZON</h3>
-          <p class="card-description">The point of no return; the boundary within which the escape velocity exceeds the speed of light.</p>
-          <div class="ios-stats-grid">
-            <div class="stat-box"><i class="fa-solid fa-traffic-light text-cyan"></i><div><span class="stat-val"></span><span class="stat-lbl">One-way</span></div></div>
-            <div class="stat-box"><i class="fa-solid fa-ruler text-cyan"></i><div><span class="stat-val"></span><span class="stat-lbl">Schwarzschild</span></div></div>
-          </div>
-          <button class="action-btn"><span>Explore Dimension</span><div class="btn-arrow"><i class="fa-solid fa-chevron-right"></i></div></button>
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 4 -->
-    <div class="col-12 col-md-6 col-lg-4 astro-card-wrapper">
-        <div class="astro-card" data-tilt data-tilt-max="12" data-tilt-speed="800" data-tilt-glare="true" data-tilt-max-glare="0.25">
-        <div class="card-inner">
-          <div class="card-header-meta"><span class="category-badge">DESERT</span><span class="index-badge">04</span></div>
-          <div class="icon-sphere"><div class="pulse-ring"></div><i class="fa-solid fa-circle text-cyan"></i></div>
-          <h3 class="card-title">SUPERMASSIVE BH</h3>
-          <p class="card-description">Massive black holes found at galactic centers, with millions to billions of solar masses.</p>
-          <div class="ios-stats-grid">
-            <div class="stat-box"><i class="fa-solid fa-dharmachakra text-cyan"></i><div><span class="stat-val"></span><span class="stat-lbl">M-billions</span></div></div>
-            <div class="stat-box"><i class="fa-solid fa-location-dot text-cyan"></i><div><span class="stat-val"></span><span class="stat-lbl">Galactic center</span></div></div>
-          </div>
-          <button class="action-btn"><span>Explore Dimension</span><div class="btn-arrow"><i class="fa-solid fa-chevron-right"></i></div></button>
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 5 -->
-    <div class="col-12 col-md-6 col-lg-4 astro-card-wrapper">
-      <div class="astro-card" data-tilt data-tilt-max="12" data-tilt-speed="800" data-tilt-glare="true" data-tilt-max-glare="0.25">
-        <div class="card-inner">
-          <div class="card-header-meta"><span class="category-badge">GIANT</span><span class="index-badge">05</span></div>
-          <div class="icon-sphere"><div class="pulse-ring"></div><i class="fa-solid fa-cloud text-cyan"></i></div>
-          <h3 class="card-title">ACCRETION DISK</h3>
-          <p class="card-description">A structure formed by diffused material orbiting a massive central body, getting intensely hot.</p>
-          <div class="ios-stats-grid">
-            <div class="stat-box"><i class="fa-solid fa-temperature-full text-cyan"></i><div><span class="stat-val"></span><span class="stat-lbl">Intense</span></div></div>
-            <div class="stat-box"><i class="fa-solid fa-lightbulb text-cyan"></i><div><span class="stat-val"></span><span class="stat-lbl">Emissive</span></div></div>
-          </div>
-          <button class="action-btn"><span>Explore Dimension</span><div class="btn-arrow"><i class="fa-solid fa-chevron-right"></i></div></button>
-        </div>
-      </div>
-    </div>
-
-    <!-- CARD 6 -->
-    <div class="col-12 col-md-6 col-lg-4 astro-card-wrapper">
-      <div class="astro-card" data-tilt data-tilt-max="12" data-tilt-speed="800" data-tilt-glare="true" data-tilt-max-glare="0.25">
-        <div class="card-inner">
-          <div class="card-header-meta"><span class="category-badge">ORBITANT</span><span class="index-badge">06</span></div>
-          <div class="icon-sphere"><div class="pulse-ring"></div><i class="fa-solid fa-ring text-cyan"></i></div>
-          <h3 class="card-title">WORMHOLES</h3>
-          <p class="card-description">A theoretical passage through spacetime that could create shortcuts for long journeys across the universe.</p>
-          <div class="ios-stats-grid">
-            <div class="stat-box"><i class="fa-solid fa-flask text-cyan"></i><div><span class="stat-val"></span><span class="stat-lbl">Theoretical</span></div></div>
-            <div class="stat-box"><i class="fa-solid fa-link text-cyan"></i><div><span class="stat-val"></span><span class="stat-lbl">Two points</span></div></div>
-          </div>
-          <button class="action-btn"><span>Explore Dimension</span><div class="btn-arrow"><i class="fa-solid fa-chevron-right"></i></div></button>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-<!--Contact with us section-->  
-<section class="contact-section py-5" id="contact">
-    <div class="container">
-
-        <div class="text-center mb-5" data-aos="fade-down" data-aos-duration="1000">
-            <h2 class="fw-bold text-white">Get in Touch</h2>
-            <p class="text-muted">Share your thoughts, suggestions, and questions with the CosmoPulse team.</p>
-        </div>
-
-        <div class="row g-4 justify-content-center">
-
-            <div class="col-lg-4" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
-                <div class="contact-info-card h-100 p-4 d-flex flex-column justify-content">
-                    <div>
-                        <h4 class="text-white mb-4">Contact Information</h4>
-                        <br>
-                        <br>
-                        <div class="d-flex align-items-center mb-3 text-light">
-                            <div class="icon-box me-3"><i class="fas fa-map-marker-alt"></i></div>
-                            <div>
-                                <span class="d-block text-muted small">Address</span>
-                                <span>Herat, Afghanistan</span>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="phenomena-card">
+                        <div class="card-header-meta">
+                            <span class="badge-cosmic">INNER CORE</span>
+                            <span class="index-badge">01</span>
+                        </div>
+                        <div class="icon-sphere">
+                            <div class="pulse-ring"></div>
+                            <i class="fa-solid fa-circle-notch"></i>
+                        </div>
+                        <h3 class="card-title">BLACK HOLE</h3>
+                        <p class="card-description">A region of spacetime where gravity is so intense that nothing, not
+                            even light, can escape its grip.</p>
+                        <div class="mini-stats">
+                            <div class="mini-stat-item">
+                                <div>
+                                    <span class="stat-val">10-100 M☉</span>
+                                    <span class="stat-lbl">Stellar Mass</span>
+                                </div>
+                            </div>
+                            <div class="mini-stat-item">
+                                <div>
+                                    <span class="stat-val">~30 km</span>
+                                    <span class="stat-lbl">Event Horizon</span>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="d-flex align-items-center mb-3 text-light">
-                            <div class="icon-box me-3"><i class="fas fa-phone-alt"></i></div>
-                            <div>
-                                <span class="d-block text-muted small">Phone</span>
-                                <span>+93 795403190</span>
-                            </div>
-                        </div>
-
-                        <div class="d-flex align-items-center mb-3 text-light">
-                            <div class="icon-box me-3"><i class="fas fa-envelope"></i></div>
-                            <div>
-                                <span class="d-block text-muted small">Email</span>
-                                <span>cosmopulse@gmail.com</span>
-                            </div>
-                        </div>
+                        <button class="action-btn"><span>Explore Depth</span>
+                            <div class="btn-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </button>
                     </div>
+                </div>
 
-                    <div class="social-links d-flex justify-content-center gap-2 mt-4">
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <div class="col-md-6 col-lg-4">
+                    <div class="phenomena-card">
+                        <div class="card-header-meta">
+                            <span class="badge-cosmic">BOUNDARY</span>
+                            <span class="index-badge">02</span>
+                        </div>
+                        <div class="icon-sphere">
+                            <div class="pulse-ring"></div>
+                            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                        </div>
+                        <h3 class="card-title">EVENT HORIZON</h3>
+                        <p class="card-description">The ultimate point of no return. Once crossed, all paths lead
+                            inevitably toward the central singularity.</p>
+                        <div class="mini-stats">
+                            <div class="mini-stat-item">
+                                <div>
+                                    <span class="stat-val">One-Way</span>
+                                    <span class="stat-lbl">Membrane</span>
+                                </div>
+                            </div>
+                            <div class="mini-stat-item">
+                                <div>
+                                    <span class="stat-val">Schwarzschild</span>
+                                    <span class="stat-lbl">Radius</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="action-btn"><span>Explore Depth</span>
+                            <div class="btn-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="phenomena-card">
+                        <div class="card-header-meta">
+                            <span class="badge-cosmic">GALACTIC</span>
+                            <span class="index-badge">03</span>
+                        </div>
+                        <div class="icon-sphere">
+                            <div class="pulse-ring"></div>
+                            <i class="fa-solid fa-shuttle-space"></i>
+                        </div>
+                        <h3 class="card-title">SUPERMASSIVE</h3>
+                        <p class="card-description">Giants lurking at galactic centers, with masses millions to billions
+                            of times that of our Sun.</p>
+                        <div class="mini-stats">
+                            <div class="mini-stat-item">
+                                <div>
+                                    <span class="stat-val">10⁶ - 10⁹ M☉</span>
+                                    <span class="stat-lbl">Mass Range</span>
+                                </div>
+                            </div>
+                            <div class="mini-stat-item">
+                                <div>
+                                    <span class="stat-val">Galactic Core</span>
+                                    <span class="stat-lbl">Location</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="action-btn"><span>Explore Depth</span>
+                            <div class="btn-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="phenomena-card">
+                        <div class="card-header-meta">
+                            <span class="badge-cosmic">THEORETICAL</span>
+                            <span class="index-badge">04</span>
+                        </div>
+                        <div class="icon-sphere">
+                            <div class="pulse-ring"></div>
+                            <i class="fa-solid fa-infinity"></i>
+                        </div>
+                        <h3 class="card-title">WORMHOLE</h3>
+                        <p class="card-description">Einstein-Rosen bridges that could theoretically connect distant
+                            points of spacetime, acting as cosmic shortcuts.</p>
+                        <div class="mini-stats">
+                            <div class="mini-stat-item">
+                                <div>
+                                    <span class="stat-val">Theoretical</span>
+                                    <span class="stat-lbl">Status</span>
+                                </div>
+                            </div>
+                            <div class="mini-stat-item">
+                                <div>
+                                    <span class="stat-val">Two Points</span>
+                                    <span class="stat-lbl">Connection</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="action-btn"><span>Explore Depth</span>
+                            <div class="btn-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="phenomena-card">
+                        <div class="card-header-meta">
+                            <span class="badge-cosmic">LUMINOUS</span>
+                            <span class="index-badge">05</span>
+                        </div>
+                        <div class="icon-sphere">
+                            <div class="pulse-ring"></div>
+                            <i class="fa-solid fa-dharmachakra"></i>
+                        </div>
+                        <h3 class="card-title">ACCRETION DISK</h3>
+                        <p class="card-description">A swirling maelstrom of superheated matter spiraling into oblivion,
+                            shining brighter than entire galaxies.</p>
+                        <div class="mini-stats">
+                            <div class="mini-stat-item">
+                                <div>
+                                    <span class="stat-val">10⁶ - 10⁹ K</span>
+                                    <span class="stat-lbl">Temperature</span>
+                                </div>
+                            </div>
+                            <div class="mini-stat-item">
+                                <div>
+                                    <span class="stat-val">Ultra-Bright</span>
+                                    <span class="stat-lbl">Luminosity</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="action-btn"><span>Explore Depth</span>
+                            <div class="btn-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="phenomena-card">
+                        <div class="card-header-meta">
+                            <span class="badge-cosmic">INFINITE</span>
+                            <span class="index-badge">06</span>
+                        </div>
+                        <div class="icon-sphere">
+                            <div class="pulse-ring"></div>
+                            <i class="fa-solid fa-burst"></i>
+                        </div>
+                        <h3 class="card-title">SINGULARITY</h3>
+                        <p class="card-description">Where all laws of physics break down. Infinite density in an
+                            infinitely small point at the heart of a black hole.</p>
+                        <div class="mini-stats">
+                            <div class="mini-stat-item">
+                                <div>
+                                    <span class="stat-val">Infinite</span>
+                                    <span class="stat-lbl">Density</span>
+                                </div>
+                            </div>
+                            <div class="mini-stat-item">
+                                <div>
+                                    <span class="stat-val">Max</span>
+                                    <span class="stat-lbl">Curvature</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="action-btn"><span>Explore Depth</span>
+                            <div class="btn-arrow"><i class="fas fa-arrow-right"></i></div>
+                        </button>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="col-lg-7" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="400">
-                <div class="contact-form-card p-4">
-                    <form id="contactForm" class="needs-validation" novalidate>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <label for="nameInput" class="form-label text-light">Full Name</label>
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
-                                    <input type="text" class="form-all-input form-control" id="nameInput" required>
-                                    <div class="invalid-feedback">Please enter your name.</div>
+    <!--contact-->
+    <section id="contact" class="py-5 cosmic-contact-section">
+        <div class="contact-bg-glow"></div>
+        <div class="container py-5 position-relative z-2">
+            <div class="text-center mb-5">
+                <h2 class="section-title-advanced">ESTABLISH CONNECTION</h2>
+                <p class="explore-subtitle text-center mx-auto" style="max-width: 600px;">Transmit your sub-space
+                    frequencies to the CosmoPulse deck.</p>
+            </div>
+
+            <div class="row g-5 justify-content-center align-items-stretch">
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact-info-card-advanced">
+                        <div class="card-quantum-mesh"></div>
+                        <h4 class="info-card-title">
+                            <span class="pulse-dot"></span>TRANSMITTER NODE
+                        </h4>
+
+                        <div class="contact-items-wrapper">
+                            <div class="contact-item-advanced">
+                                <div class="contact-icon-box-neon">
+                                    <i class="fas fa-satellite-dish"></i>
+                                </div>
+                                <div class="item-details">
+                                    <span class="contact-label-cyber">Orbital Station</span>
+                                    <span class="contact-value-cyber">Herat, Afghanistan</span>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <label for="emailInput" class="form-label text-light">Email Address</label>
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                                    <input type="email" class="form-all-input form-control" id="emailInput" required>
-                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+
+                            <div class="contact-item-advanced">
+                                <div class="contact-icon-box-neon">
+                                    <i class="fas fa-wave-square"></i>
+                                </div>
+                                <div class="item-details">
+                                    <span class="contact-label-cyber">Sub-space Comm</span>
+                                    <span class="contact-value-cyber">+93 795 403 190</span>
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <label for="subjectInput" class="form-label text-light">Subject</label>
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="fas fa-heading"></i></span>
-                                    <input type="text" class="form-all-input form-control" id="subjectInput" required>
-                                    <div class="invalid-feedback">Please specify the subject.</div>
+
+                            <div class="contact-item-advanced">
+                                <div class="contact-icon-box-neon">
+                                    <i class="fas fa-envelope-open-text"></i>
                                 </div>
-                            </div>
-                            <div class="col-12">
-                                <label for="messageInput" class="form-label text-light">Message</label>
-                                <textarea class="form-all-input form-control" id="messageInput" rows="5" required></textarea>
-                                <div class="invalid-feedback">Please write your message.</div>
-                            </div>
-                            <div class="col-12 text-end">
-                                <button type="submit" class="btn btn-submit px-4 py-2">
-                                    Send Message <i class="fas fa-paper-plane ms-2"></i>
-                                </button>
+                                <div class="item-details">
+                                    <span class="contact-label-cyber">Quantum Mail</span>
+                                    <span class="contact-value-cyber text-truncate">cosmopulse@gmail.com</span>
+                                </div>
                             </div>
                         </div>
+
+                        <div class="social-cyber-container">
+                            <p class="cyber-social-title">Broadcast Networks</p>
+                            <div class="social-links-row-advanced">
+                                <a href="#" class="social-circle-cyber" data-text="IG"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-circle-cyber" data-text="TG"><i
+                                        class="fab fa-telegram-plane"></i></a>
+                                <a href="#" class="social-circle-cyber" data-text="LN"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-circle-cyber" data-text="X"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-md-6">
+                    <div class="contact-form-card-advanced">
+                        <div class="form-corner-lines"></div>
+                        <form id="contactForm" class="position-relative z-2">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="input-group-cyber">
+                                        <input type="text" class="form-input-cyber" id="inputName" placeholder=" "
+                                            required>
+                                        <label for="inputName" class="form-label-cyber">Operator Name</label>
+                                        <div class="input-glow-line"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group-cyber">
+                                        <input type="email" class="form-input-cyber" id="inputEmail" placeholder=" "
+                                            required>
+                                        <label for="inputEmail" class="form-label-cyber">Sub-space Email</label>
+                                        <div class="input-glow-line"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-group-cyber">
+                                        <input type="text" class="form-input-cyber" id="inputSubject" placeholder=" "
+                                            required>
+                                        <label for="inputSubject" class="form-label-cyber">Signal Subject</label>
+                                        <div class="input-glow-line"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-group-cyber">
+                                        <textarea class="form-input-cyber textarea-cyber" id="inputMessage" rows="5"
+                                            placeholder=" " required></textarea>
+                                        <label for="inputMessage" class="form-label-cyber">Encrypted Message...</label>
+                                        <div class="input-glow-line"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-center">
+                                    <button type="submit" class="btn-cyber-submit w-100 justify-content-center">
+                                        <span class="btn-text">TRANSMIT SIGNAL</span>
+                                        <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="successMessage" class="success-alert-cyber d-none">
+                            <div class="alert-pulse-ring"></div>
+                            <i class="fas fa-satellite"></i>
+                            <span><strong>Transmission Successful:</strong> Quantum data packet successfully routed to
+                                core terminal.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="cosmic-footer">
+        <div class="footer-glow"></div>
+        <div class="container position-relative z-1">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-brand">COSMO<span class="brand-highlight">PULSE</span></h5>
+                    <p class="footer-description">Exploring the unknowns of the cosmos and the endless pulse of stars.
+                        Join us on this epic interstellar journey.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="footer-social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer-social-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-heading">Quick Links</h6>
+                    <ul class="footer-links-list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#stats"> Cosmic Stats</a></li>
+                        <li><a href="#explore">Planet Explorer</a></li>
+                        <li><a href="#blackholes"> Phenomena</a></li>
+                        <li><a href="#contact"> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-heading">Resources</h6>
+                    <ul class="footer-links-list">
+                        <li><a href="#"> Privacy Policy</a></li>
+                        <li><a href="#"> Terms of Service</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="footer-heading">Cosmic Newsletter</h6>
+                    <p class="footer-description mb-3">Subscribe to receive the latest astronomical discoveries.</p>
+                    <form id="newsletterForm" class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email address..." required>
+                        <button type="submit" class="newsletter-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
                     </form>
-                    <div id="successMessage" class="alert alert-success mt-3 d-none" role="alert">
-                        <i class="fas fa-check-circle me-2"></i> Your message has been sent successfully!
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="copyright-text">&copy; 2026 CosmoPulse. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                        <button id="scrollToTop" class="scroll-top-btn">
+                            <i class="fas fa-arrow-up"></i>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- Footer -->
-<footer class="bg-cosmic text-light py-5 position-relative overflow-hidden" dir="ltr">
-  <div class="cosmic-glow"></div>
+    </footer>
 
-  <div class="container position-relative z-1">
-    <div class="row gy-4">
-      
-      <div class="col-lg-4 col-md-6">
-        <h5 class="text-uppercase fw-bold text-gradient mb-3">COSMOPULSE</h5>
-        <p class="text-muted small">Exploring the unknowns of the cosmos and the endless pulse of stars. Join us on this epic interstellar journey.</p>
-        <div class="d-flex gap-3 mt-3">
-          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
-
-      <div class="col-lg-2 col-md-6">
-        <h6 class="text-uppercase fw-bold mb-3 text-cyan">Quick Links</h6>
-        <ul class="list-unstyled footer-links">
-          <li><a href="#" class="nav-link-custom"><i class="fas fa-chevron-right me-2 small-icon"></i>Home</a></li>
-          <li><a href="#" class="nav-link-custom"><i class="fas fa-chevron-right me-2 small-icon"></i>Cosmic Stats</a></li>
-          <li><a href="#" class="nav-link-custom"><i class="fas fa-chevron-right me-2 small-icon"></i>Planet Explorer</a></li>
-        </ul>
-      </div>
-
-      <div class="col-lg-2 col-md-6">
-        <h6 class="text-uppercase fw-bold mb-3 text-cyan">Resources</h6>
-        <ul class="list-unstyled footer-links">
-          <li><a href="#" class="nav-link-custom"><i class="fas fa-chevron-right me-2 small-icon"></i>Privacy Policy</a></li>
-          <li><a href="#" class="nav-link-custom"><i class="fas fa-chevron-right me-2 small-icon"></i>Terms of Service</a></li>
-          <li><a href="#" class="nav-link-custom"><i class="fas fa-chevron-right me-2 small-icon"></i>Support</a></li>
-        </ul>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <h6 class="text-uppercase fw-bold mb-3 text-cyan">Cosmic Newsletter</h6>
-        <p class="text-muted small">Subscribe to receive the latest astronomical discoveries and updates.</p>
-        <form id="newsletterForm" class="input-group mb-3">
-          <input type="email" id="newsletterEmail" class="form-control bg-dark-custom text-light border-secondary" placeholder="Your email address..." required>
-          <button class="btn bg-cyan text-white" type="submit">
-            <i class="fas fa-paper-plane"></i>
-          </button>
-        </form>
-      </div>
-
-    </div>
-
-    <hr class="border-secondary my-4">
-    <div class="row align-items-center">
-      <div class="col-md-6 text-center text-md-start">
-        <p class="text-muted small mb-0">&copy; 2026 CosmoPulse. All rights reserved.</p>
-      </div>
-      <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
-        <button id="scrollToTop" class="btn btn-outline-cyan btn-sm rounded-circle">
-          <i class="fas fa-arrow-up"></i>
-        </button>
-      </div>
-    </div>
-  </div>
-</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="app.js"></script>
-
 </body>
-
 </html>

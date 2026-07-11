@@ -65,6 +65,7 @@ function updateActiveNavLink() {
     ) {
       navLinks.forEach((link) => {
         link.classList.remove("active");
+        // این خط رو درست کردم - بک‌تیک فراموش شده بود
         if (link.getAttribute("href") === `#${sectionId}`) {
           link.classList.add("active");
         }
@@ -72,7 +73,6 @@ function updateActiveNavLink() {
     }
   });
 
-  // Special case for top of page
   if (window.scrollY < 200) {
     navLinks.forEach((link) => {
       link.classList.remove("active");
@@ -103,7 +103,6 @@ function updateSlider() {
     }
   });
 
-  // Reset progress bar animation
   const progressBar = document.getElementById("autoplayProgress");
   if (progressBar) {
     progressBar.style.animation = "none";
@@ -201,12 +200,18 @@ function stopAutoplay() {
 sliderContainer.addEventListener("mouseenter", stopAutoplay);
 sliderContainer.addEventListener("mouseleave", startAutoplay);
 
-// Initialize everything
+// ============================================
+// همه چی توی یه DOMContentLoaded
+// ============================================
 document.addEventListener("DOMContentLoaded", () => {
+  // Stars
   createStars();
+
+  // Slider
   updateSlider();
   startAutoplay();
 
+  // Scroll events
   window.addEventListener("scroll", () => {
     handleNavbarScroll();
     updateActiveNavLink();
@@ -214,7 +219,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateActiveNavLink();
 
-  // Smooth scroll for anchor links
+  // Smooth scroll
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
@@ -230,77 +235,69 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Counter animation on scroll
   const statsSection = document.getElementById("stats");
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          startCounters();
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.3 },
-  );
+  if (statsSection) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            startCounters();
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.3 },
+    );
+    observer.observe(statsSection);
+  }
 
-  observer.observe(statsSection);
-});
+  // Contact Form
+  const contactForm = document.getElementById("contactForm");
+  const successMessage = document.getElementById("successMessage");
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const inputs = this.querySelectorAll(
+        "input[required], textarea[required]",
+      );
+      let isValid = true;
 
-AOS.init({
-    once: true, 
-    easing: 'ease-out-quad'
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    'use strict';
-
-    const form = document.getElementById('contactForm');
-    const successMessage = document.getElementById('successMessage');
-
-    form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-            event.preventDefault();
-            event.stopPropagation();
+      inputs.forEach((input) => {
+        if (!input.value.trim()) {
+          isValid = false;
+          input.style.borderColor = "rgba(239, 68, 68, 0.5)";
         } else {
-            event.preventDefault(); 
-            successMessage.classList.remove('d-none');
-            form.reset();
-            form.classList.remove('was-validated');
-            
-            setTimeout(() => {
-                successMessage.classList.add('d-none');
-            }, 5000);
-            return;
+          input.style.borderColor = "rgba(255, 255, 255, 0.1)";
         }
-        form.classList.add('was-validated');
-    }, false);
-});
-document.addEventListener("DOMContentLoaded", function () {
-  const scrollToTopBtn = document.getElementById("scrollToTop");
-  if (scrollToTopBtn) {
-    scrollToTopBtn.addEventListener("click", () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
       });
+
+      if (isValid && successMessage) {
+        successMessage.classList.remove("d-none");
+        this.reset();
+        setTimeout(() => {
+          successMessage.classList.add("d-none");
+        }, 4000);
+      }
     });
   }
 
+  // Scroll to Top Button
+  const scrollToTopBtn = document.getElementById("scrollToTop");
+  if (scrollToTopBtn) {
+    scrollToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+  // Newsletter Form
   const newsletterForm = document.getElementById("newsletterForm");
   if (newsletterForm) {
     newsletterForm.addEventListener("submit", function (e) {
       e.preventDefault();
-      const emailInput = document.getElementById("newsletterEmail").value;
-      
-      alert(`Email ${emailInput} successfuly registered`);
-      newsletterForm.reset();
+      const emailInput = document.getElementById("newsletterEmail");
+      if (emailInput && emailInput.value) {
+        alert(`Welcome aboard, space explorer! 🚀`);
+        newsletterForm.reset();
+      }
     });
   }
 });
-  VanillaTilt.init(document.querySelectorAll(".astro-card"), {
-    max: 12,            
-    speed: 800,     
-    glare: true,        
-    "max-glare": 0.25, 
-    gyroscope: true,    
-    perspective: 1200   
-  });
